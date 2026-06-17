@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0a0c10;
+  --surface:   #11141b;
+  --surface2:  #1a1d26;
+  --border:    rgba(255,255,255,0.06);
+  --border2:   rgba(255,255,255,0.1);
+  --text:      #f0f2f5;
+  --muted:     #8a94a6;
+  --accent:    #3b82f6;
+  --accent2:   #2563eb;
+  --fake:      #ef4444;
+  --fake-bg:   rgba(239,68,68,0.08);
+  --fake-bdr:  rgba(239,68,68,0.2);
+  --real:      #10b981;
+  --real-bg:   rgba(16,185,129,0.08);
+  --real-bdr:  rgba(16,185,129,0.2);
+  --font-head: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius:    12px;
+  --radius-sm: 6px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, button { font-family: var(--font-body); }
+
+input::placeholder, textarea::placeholder { color: var(--muted); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 99px; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(79,142,247,0.4); }
+  70%  { box-shadow: 0 0 0 10px rgba(79,142,247,0); }
+  100% { box-shadow: 0 0 0 0 rgba(79,142,247,0); }
+}
+
+.fade-up { animation: fadeUp 0.4s ease both; }
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  :root {
+    --radius: 12px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+
+  .mobile-stack {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .mobile-hide-text {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --radius: 10px;
+  }
+
+  .mobile-padding {
+    padding: 20px 16px !important;
+  }
+  
+  .mobile-text-sm {
+    font-size: 11px !important;
+  }
+}
