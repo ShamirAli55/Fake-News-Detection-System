@@ -25,14 +25,14 @@ The model was trained on a consolidated dataset of **136,437 news articles** mer
 
 ### **📥 Dataset Kaggle Download Links**
 
-Due to repository storage optimization and compliance, raw dataset CSV files are excluded from Git tracking. You can download the original datasets directly from Kaggle and place them into the `News _dataset/` folder:
+Due to repository storage optimization and compliance, raw dataset CSV files are excluded from Git tracking. You can download the datasets directly from Kaggle and place them into the `News _dataset/` folder:
 
 1. **Fake and Real News Dataset** (`Fake.csv` & `True.csv`):
-   - 🔗 [Kaggle Download Link](https://www.kaggle.com/datasets/clementbisaac/fake-and-real-news-dataset)
+   - 🔗 [Kaggle Download Link](https://www.kaggle.com/datasets/cl7inc/fake-and-real-news-dataset)
 2. **WELFake - Word Embedding Over Fitting for Fake News Detection** (`WELFake_Dataset.csv`):
    - 🔗 [Kaggle Download Link](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
-3. **Fake News Detection Dataset** (`fake_news_dataset.csv`):
-   - 🔗 [Kaggle Download Link](https://www.kaggle.com/datasets/jillanisofttech/fake-news-detection)
+3. **Fake News Detection Dataset**:
+   - 🔗 [Kaggle Download Link](https://www.kaggle.com/datasets/hassanamin/fake-news)
 
 ---
 
